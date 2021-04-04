@@ -1,0 +1,78 @@
+body{
+    font-size: 14px;
+}
+.page-container {
+  display: flex;
+}
+
+
+/* ASIDE */
+.aside-line {
+  flex: 0.03;
+  background-image: linear-gradient(blue, red, orange, yellow);
+}
+.page-container aside {
+  flex: 1;
+  height: 650px;
+  background-color: #232222;
+}
+.page-container main {
+  flex: 2;
+  background-color: #e7ded7;
+}
+.triangle-bottomleft {
+  position: sticky;
+  width: 0px;
+  height: 550px;
+  border-bottom: 100px solid #232222;
+  border-right: 100px solid transparent;
+}
+aside h4{
+    color: #e7ded7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:0;
+}
+aside .sub-head{
+    display:block;
+    color: #e7ded7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight:100;
+    font-stretch: extra-condensed ;
+    text-align:center;
+    margin:0 auto;
+}
+aside .slogan{
+    display:block;
+    margin:100px auto;
+    width:70%;
+    color: #e7ded7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.circleBandPics{
+width:80%;
+display:flex;
+margin:0 auto;
+}
+.band-pic{
+    flex:1
+}
+.band-pic img{
+    height:50px;
+    border-radius: 50%;
+}
+.circleBandPics span{
+    font-size: 10px;
+    margin-left:10px;
+    color: #e7ded7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top:5px;
+}
