@@ -1,6 +1,9 @@
 body {
   font-size: 14px;
 }
+a{
+  text-decoration: none;
+}
 .page-container {
   display: flex;
 }
@@ -98,7 +101,6 @@ aside .slogan {
 }
 .navbar li a {
   color: #232222;
-  text-decoration: none;
   padding: 20px;
 }
 .triangle-bottomleft {
@@ -108,11 +110,14 @@ aside .slogan {
   border-bottom: 100px solid #232222;
   border-right: 100px solid transparent;
 }
+.hidden{
+  display:none;
+}
 
 
 
 /* BROWSE PAGE */
-.browse-page{
+.browse.page{
   width:90%;
   margin:0 auto;
   margin-top:25px;
@@ -135,7 +140,6 @@ h3{
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #232222;
-  text-decoration: none;
   background-color: #ff8000d6;
   padding: 5px 10px;
   border-radius: 30px;
@@ -167,8 +171,64 @@ h3{
   color:#ff8000d6;
   cursor:pointer;
 }
-
 .more-ganres{
   float:right;
 }
 
+
+/* VENUES PAGE */
+
+.venues.page{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  width:90%;
+  margin:0 auto;
+  margin-top:25px;
+  height:580px;
+}
+
+.venues.page a{
+  border:0.1px solid #868584;
+  border-radius:15px;
+  overflow: hidden;
+}
+.grid-pic{
+  height:125px;
+  background-size: cover;
+}
+.grid-name{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align:center;
+  color:#232222;
+  margin-top:5px;
+}
+.grid-pic.roundhouse{
+  background-image: url(https://lovecamden.org/sites/default/files/inline-images/Credit%20-%20Rob%20Dunlop.jpg);
+}
+.grid-pic.koko{
+  background-image: url(https://files.list.co.uk/images/k/kokoapproved051-lst147571.jpg);
+}
+.grid-pic.underworld{
+  background-image: url(https://cdn.londonandpartners.com/asset/fdf5990f35627c859466b01873fa9919.jpg);
+}
+.grid-pic.brixton{
+  background-image: url(https://www.nme.com/wp-content/uploads/2017/02/2016_NMEAwards2016_9_AndyHughes_180216-1.jpg);
+}
+.grid-pic.fleece{
+  background-image: url(https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/9/16/1410861369675/aa1c978b-dfc5-44f6-8f9e-e817ea9e5bac-2060x1236.jpeg?width=445&quality=45&auto=format&fit=max&dpr=2&s=5178a91b0e57165b8960bde6dffeaa44);
+}
+.grid-pic.dublin{
+  background-image: url(https://i.pinimg.com/originals/73/e3/8b/73e38b05e11891c4238257f422e7b744.jpg);
+}
+.grid-pic.ziggo{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/74/Ziggo_Dome.JPG);
+}
+.grid-pic.mediolanum{
+  background-image: url(https://d1bvpoagx8hqbg.cloudfront.net/originals/an-arena-3cd87cd42253594b6cacbdc70ea0cbe1.jpg);
+}
+.grid-pic.zenith{
+  background-image: url(https://www.tourisme93.com/Local/gus/files/16892/bigLe_Zenith_4.jpg);
+}
