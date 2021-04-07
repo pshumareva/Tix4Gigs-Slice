@@ -56,13 +56,13 @@
 
         <main>
             <nav class="navbar">
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Venues</a></li>
+                <li><a href="#" class="browse" onclick="openBrowse()">Browse</a></li>
+                <li><a href="#" class="venues" onclick="openVenues()">Venues</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
             </nav>
 
-            <div class="browse page hidden">
+            <div id="browse" class="page">
                 <div class="rock">
                     <div class="heading-see-more">
                         <h3>Rock:</h3>
@@ -224,7 +224,7 @@
                 <a href="#" class="more-ganres">See more ganres...</a>
             </div>
 
-            <div class="venues page">
+            <div id="venues" class="page hidden">
                 
                 <a href="#">
                    <div class="grid-item">
@@ -300,7 +300,10 @@
             <div class="triangle-bottomleft"></div>
         </main>
     </div>
-
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="JS/main.js"></script>
 </body>
 

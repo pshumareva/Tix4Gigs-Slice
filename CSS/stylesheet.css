@@ -110,14 +110,12 @@ aside .slogan {
   border-bottom: 100px solid #232222;
   border-right: 100px solid transparent;
 }
-.hidden{
-  display:none;
-}
+
 
 
 
 /* BROWSE PAGE */
-.browse.page{
+#browse{
   width:90%;
   margin:0 auto;
   margin-top:25px;
@@ -136,7 +134,7 @@ h3{
   margin-block-end: 0;
   margin-left:5px;
 }
-.heading-see-more a, .browse-page .more-ganres{
+.heading-see-more a, #browse .more-ganres{
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #232222;
@@ -178,8 +176,8 @@ h3{
 
 /* VENUES PAGE */
 
-.venues.page{
-  display:grid;
+#venues{
+  display:none;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
   width:90%;
@@ -188,7 +186,7 @@ h3{
   height:580px;
 }
 
-.venues.page a{
+#venues a{
   border:0.1px solid #868584;
   border-radius:15px;
   overflow: hidden;
@@ -231,4 +229,8 @@ h3{
 }
 .grid-pic.zenith{
   background-image: url(https://www.tourisme93.com/Local/gus/files/16892/bigLe_Zenith_4.jpg);
+}
+
+#venues .page.hidden{
+  display:none;
 }
