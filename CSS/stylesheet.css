@@ -190,10 +190,23 @@ h3{
   border:0.1px solid #868584;
   border-radius:15px;
   overflow: hidden;
+  height:200px;
+}
+#venues a:hover{
+ 
 }
 .grid-pic{
   height:125px;
   background-size: cover;
+  -webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.roundhouse:hover, .koko:hover, .underworld:hover, .brixton:hover, .fleece:hover, .dublin:hover, .ziggo:hover, .mediolanum:hover, .zenith:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1);
 }
 .grid-name{
   font-family: "Montserrat", sans-serif;
@@ -201,7 +214,7 @@ h3{
   font-weight: 700;
   text-align:center;
   color:#232222;
-  margin-top:5px;
+  margin-top:35px;
 }
 .grid-pic.roundhouse{
   background-image: url(https://lovecamden.org/sites/default/files/inline-images/Credit%20-%20Rob%20Dunlop.jpg);
